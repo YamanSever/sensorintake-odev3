@@ -1,6 +1,5 @@
 package frc.robot.commands;
 
-import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.subsystems.Intake;
 import frc.robot.subsystems.Feeder;
@@ -11,8 +10,6 @@ public class intaking extends Command {
 
   double m_feeder_speed;
   Feeder m_feeder_motor;
-
-  DigitalInput intakingSensor = Intake.intakeSensor;
 
   public intaking(Intake intake_motor, double intake_speed, Feeder feeder_motor, double feeder_speed) {
     this.m_intake_speed = intake_speed;
